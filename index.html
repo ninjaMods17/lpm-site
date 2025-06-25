@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lynx Package Manager (lpm) - Official Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://i.ibb.co/nNwZXnp4/file-00000000c3ec61f9bd274e6f3081d9ac.png" alt="Lynx Package Manager Logo" class="logo-img">
+        <h1>Lynx Package Manager</h1>
+      </div>
+      <div class="menu-toggle">
+        <span class="mdi mdi-menu"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home"><span class="mdi mdi-home"></span> Home</a></li>
+        <li><a href="#features"><span class="mdi mdi-star"></span> Features</a></li>
+        <li><a href="#docs"><span class="mdi mdi-book-open-variant"></span> Documentation</a></li>
+        <li><a href="#install"><span class="mdi mdi-download"></span> Install</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h2><span class="mdi mdi-paw"></span> Welcome to lpm v1.1.0</h2>
+      <p>A fast, agile, and modern package manager for Node.js, inspired by the lynx.</p>
+      <a href="#install" class="btn"><span class="mdi mdi-rocket-launch"></span> Get Started</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2><span class="mdi mdi-star"></span> Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3><span class="mdi mdi-speedometer"></span> Speed & Agility</h3>
+        <p>Install dependencies quickly, just like a lynx on the hunt.</p>
+      </div>
+      <div class="feature-card">
+        <h3><span class="mdi mdi-console"></span> Simple Commands</h3>
+        <p>Easy-to-use commands like <code>lpm install</code> and <code>lpm start</code>.</p>
+      </div>
+      <div class="feature-card">
+        <h3><span class="mdi mdi-nodejs"></span> Node.js Integration</h3>
+        <p>Seamlessly works with package.json and the npm registry.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="docs">
+    <h2><span class="mdi mdi-book-open-variant"></span> Documentation</h2>
+    <div class="docs-content">
+      <h3>Getting Started</h3>
+      <p>Lynx Package Manager (lpm) v1.1.0 is a custom tool for managing Node.js dependencies with speed and simplicity.</p>
+      
+      <h4>Commands</h4>
+      <ul>
+        <li>
+          <code>lpm init</code>
+          <p>Initialize a new project with package.json. Use <code>-y</code> or <code>--yes</code> for default values.</p>
+          <pre>
+[🐾] lpm v1.1.0
+[✓] package.json created with default values!
+          </pre>
+          <p>Example: <code>lpm init -y</code></p>
+          <p>Note: [🐾] and [✓] appear in green, [⚡] in cyan in the terminal.</p>
+        </li>
+        <li>
+          <code>lpm install</code>
+          <p>Install all dependencies from package.json.</p>
+          <pre>
+[🐾] lpm v1.1.0
+[⚡] Packages cached: 20% | ██       
+[⚡] Installing axios@^1.9.0...
+[⚡] Packages cached: 50% | █████    
+[✓] Downloaded and extracted: axios@1.9.0
+[⚡] Packages cached: 100% | ██████████
+[✓] Dependencies installed in 0.8s
+          </pre>
+          <p>Example: <code>lpm install</code></p>
+          <p>Note: [🐾] and [✓] appear in green, [⚡] in cyan in the terminal.</p>
+        </li>
+        <li>
+          <code>lpm install <package></code>
+          <p>Install a specific package (e.g., axios) and add it to package.json.</p>
+          <pre>
+[🐾] lpm v1.1.0
+[⚡] Packages cached: 20% | ██       
+[⚡] Installing axios...
+[⚡] Packages cached: 50% | █████    
+[✓] Downloaded and extracted: axios@1.9.0
+[⚡] Packages cached: 100% | ██████████
+[✓] axios installed and added to package.json!
+          </pre>
+          <p>Example: <code>lpm install axios</code></p>
+          <p>Note: [🐾] and [✓] appear in green, [⚡] in cyan in the terminal.</p>
+        </li>
+        <li>
+          <code>lpm start</code>
+          <p>Run the "start" script defined in package.json.</p>
+          <pre>
+[🐾] lpm v1.1.0
+[⚡] Running: node index.js
+Hello, world! Running with lpm!
+[✓] Script executed successfully!
+          </pre>
+          <p>Example: <code>lpm start</code></p>
+          <p>Note: [🐾] and [✓] appear in green, [⚡] in cyan, [✗] in red in the terminal.</p>
+        </li>
+        <li>
+          <code>lpm help</code>
+          <p>Display help information for all commands.</p>
+          <pre>
+[🐾] lpm v1.1.0
+Lynx Package Manager (lpm) - Command Help
+Usage: lpm <command> [options]
+...
+          </pre>
+          <p>Example: <code>lpm help</code></p>
+          <p>Note: [🐾] and [✓] appear in green, [⚡] in cyan in the terminal.</p>
+        </li>
+        <li>
+          <code>lpm -v, --version</code>
+          <p>Display the version of Lynx Package Manager.</p>
+          <pre>
+1.1.0
+          </pre>
+          <p>Example: <code>lpm --version</code></p>
+          <p>Note: Version appears in green in the terminal.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2><span class="mdi mdi-download"></span> Install lpm v1.1.0</h2>
+    <p>Follow these steps to get started with Lynx Package Manager:</p>
+    <pre>
+[🐾] lpm v1.1.0
+# Clone the repository
+git clone https://github.com/ninjaMods17/lpm.git
+cd lpm
+
+# Link globally
+npm link
+
+# Test it
+lpm --version
+[✓] Version: 1.1.0
+    </pre>
+    <p>Note: [🐾] and [✓] appear in green, [⚡] in cyan in the terminal.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lynx Package Manager v1.1.0. Built with speed and precision.</p>
+    <p><a href="https://github.com/ninjaMods17/lpm"><span class="mdi mdi-github"></span> GitHub</a> | 
+       <a href="#docs"><span class="mdi mdi-book-open-variant"></span> Documentation</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
